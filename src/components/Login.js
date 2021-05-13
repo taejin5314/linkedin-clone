@@ -12,8 +12,19 @@ const Login = (props) => {
   )
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+  padding: 0px;
+`;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  max-width: 1128px;
+  margin: auto;
+  padding: 12px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: nowrap;
+`;
 
 export default Login;
