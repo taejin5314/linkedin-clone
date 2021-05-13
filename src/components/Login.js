@@ -25,6 +25,10 @@ const Nav = styled.nav`
   justify-content: space-between;
   position: relative;
   flex-wrap: nowrap;
+
+  & > a {
+    width: 135px;
+  }
 `;
 
 export default Login;
