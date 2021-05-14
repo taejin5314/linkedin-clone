@@ -43,6 +43,11 @@ const Join = styled.a`
   padding: 10px 12px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
+  margin-right: 12px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
 `;
 
 export default Login;
