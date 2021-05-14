@@ -47,6 +47,7 @@ const Join = styled.a`
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.9);
   }
 `;
 
