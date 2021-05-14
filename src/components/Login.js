@@ -9,6 +9,7 @@ const Login = (props) => {
         </a>
         <div>
           <Join>Join now</Join>
+          <SignIn>Sign In</SignIn>
         </div>
       </Nav>
     </Container>
@@ -52,5 +53,7 @@ const Join = styled.a`
     text-decoration: none;
   }
 `;
+
+const SignIn = styled.a``;
 
 export default Login;
