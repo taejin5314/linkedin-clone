@@ -59,6 +59,18 @@ const SignIn = styled.a`
   color: #0a66c2;
   border-radius: 24px;
   transition-duration: 167ms;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 40px;
+  padding: 10px 24px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    background-color: rgba(112, 181, 249, 0.15);
+    color: #0a66c2;
+    text-decoration: none;
+  }
 `;
 
 export default Login;
