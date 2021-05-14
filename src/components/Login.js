@@ -80,7 +80,17 @@ const Section = styled.section`
   min-height: 700px;
   padding-bottom: 138px;
   padding-top: 40px;
-  
+  padding: 60px 0;
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1128px;
+  align-items: center;
+  margin: auto;
+  @media (max-width: 768px) {
+    margin: auto;
+    min-height: 0px;
+  }
 `;
 
 export default Login;
