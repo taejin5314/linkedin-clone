@@ -54,6 +54,8 @@ const Join = styled.a`
   }
 `;
 
-const SignIn = styled.a``;
+const SignIn = styled.a`
+  box-shadow: inset 0 0 0 1px #0a66c2;
+`;
 
 export default Login;
