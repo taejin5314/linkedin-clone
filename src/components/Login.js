@@ -20,6 +20,7 @@ const Login = (props) => {
         <Form>
           <Google>
             <img src="/images/google.svg" alt="" />
+            Sign in with Google
           </Google>
         </Form>
       </Section>
@@ -135,6 +136,14 @@ const Hero = styled.div`
       height: initial;
     }
   }
+`;
+
+const Form = styled.div`
+  
+`;
+
+const Google = styled.button`
+
 `;
 
 export default Login;
