@@ -107,7 +107,7 @@ const Section = styled.section`
 const Hero = styled.div`
   width: 100%;
   h1 {
-    padding-bottom: 0;
+    padding-bottom: 20px;
     width: 55%;
     font-size: 56px;
     color: #2977c9;
@@ -142,6 +142,7 @@ const Form = styled.div`
   margin-top: 100px;
   width: 408px;
   @media (max-width: 768px) {
+    margin: auto;
     margin-top: 20px;
   }
 `;
