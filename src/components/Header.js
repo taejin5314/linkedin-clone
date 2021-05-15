@@ -5,7 +5,7 @@ const Header = (props) => {
     <Container>
       <Content>Header</Content>
     </Container>
-  );
+  )
 }
 
 const Container = styled.div`
