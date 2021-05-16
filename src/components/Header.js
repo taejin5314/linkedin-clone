@@ -34,7 +34,8 @@ const Content = styled.div`
 `;
 
 const Logo = styled.span`
-  
+  margin-right: 8px;
+  font-size: 8px;
 `;
 
 export default Header;
