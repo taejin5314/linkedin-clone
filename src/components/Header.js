@@ -57,7 +57,17 @@ const Logo = styled.span`
 `;
 
 const Search = styled.div`
-
+  opacity: 1;
+  flex-grow: 1;
+  position: relative;
+  & > div {
+    max-width: 280px;
+    input {
+      border: none;
+      box-shadow: none;
+      background-color: #eef3f8;
+    }
+  }
 `;
 
 const SearchIcon = styled.div``;
