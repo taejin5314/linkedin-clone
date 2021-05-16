@@ -3,7 +3,13 @@ import styled from 'styled-components';
 const Header = (props) => {
   return (
     <Container>
-      <Content>Header</Content>
+      <Content>
+        <Logo>
+          <a href="/home">
+            <img src="/images/home-logo.svg" alt="" />
+          </a>
+        </Logo>
+      </Content>
     </Container>
   )
 }
@@ -25,6 +31,10 @@ const Content = styled.div`
   margin: 0 auto;
   min-height: 100%;
   max-width: 1128px;
+`;
+
+const Logo = styled.span`
+  
 `;
 
 export default Header;
