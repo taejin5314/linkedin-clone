@@ -73,10 +73,25 @@ const Search = styled.div`
       line-height: 1.75;
       font-weight: 400;
       font-size: 14px;
+      height: 34px;
+      border-color: #dce6f1;
+      vertical-align: text-top;
     }
   }
 `;
 
-const SearchIcon = styled.div``;
+const SearchIcon = styled.div`
+  width: 40px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 2px;
+  border-radius: 0 2px 2px 0;
+  margin: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export default Header;
