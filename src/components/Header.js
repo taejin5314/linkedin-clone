@@ -22,6 +22,7 @@ const Header = (props) => {
             <NavList>
               <a href="">
                 <img src="/images/nav-home.svg" alt="" />
+                <span>Home</span>
               </a>
             </NavList>
           </NavListWrap>
@@ -133,6 +134,7 @@ const NavList = styled.li`
       display: flex;
       align-items: center;
     }
+
     @media (max-width: 768px) {
       min-width: 70px;
     }
