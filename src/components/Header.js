@@ -53,6 +53,25 @@ const Header = (props) => {
                 <span>Notifications</span>
               </a>
             </NavList>
+
+            <User>
+              <a>
+                <img src="/images/user.svg" alt="" />
+                <span>Me
+                  <img src="/images/down-icon.svg" alt="" />
+                </span>
+              </a>
+            </User>
+
+            <Work>
+              <a>
+                <img src="/images/nav-work.svg" alt="" />
+                <span>Work
+                  <img src="/images/down-icon.svg" alt="" />
+                </span>
+              </a>
+            </Work>
+
           </NavListWrap>
         </Nav>
       </Content>
@@ -192,5 +211,9 @@ const NavList = styled.li`
     }
   }
 `;
+
+const User = styled(NavList)``;
+
+const Work = styled(User)``;
 
 export default Header;
