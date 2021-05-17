@@ -14,6 +14,12 @@ const Leftside = (props) => {
             <AddPhotoText>Add a photo</AddPhotoText>
           </a>
         </UserInfo>
+        <Widget>
+          <a>
+            <span>Connections</span>
+            <span>Grow your network</span>
+          </a>
+        </Widget>
       </ArtCard>
     </Container>
   );
