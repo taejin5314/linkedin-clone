@@ -4,7 +4,16 @@ const Leftside = (props) => {
   return (
     <Container>
       <ArtCard>
-        card
+        <UserInfo>
+          <CardBackground />
+          <a>
+            <Photo />
+            <Link>Welcome, there!</Link>
+          </a>
+          <a>
+            <AddPhotoText>Add a photo</AddPhotoText>
+          </a>
+        </UserInfo>
       </ArtCard>
     </Container>
   );
@@ -24,6 +33,22 @@ const ArtCard = styled.div`
   position: relative;
   border: none;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
+`;
+
+const UserInfo = styled.div`
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 12px 12px 16px;
+  word-wrap: break-word;
+`;
+
+const CardBackground = styled.div``;
+
+const Photo = styled.div``;
+
+const Link = styled.div``;
+
+const AddPhotoText = styled.div`
+
 `;
 
 export default Leftside;
