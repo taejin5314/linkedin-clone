@@ -62,6 +62,8 @@ const Photo = styled.div`
   background-size: 60%;
   background-repeat: no-repeat;
   border: 2px solid white;
+  margin: -38px auto 12px;
+  border-radius: 50%;
 `;
 
 const Link = styled.div``;
