@@ -212,8 +212,21 @@ const NavList = styled.li`
   }
 `;
 
-const User = styled(NavList)``;
+const User = styled(NavList)`
+  a > img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
 
-const Work = styled(User)``;
+  span {
+    display: flex;
+    align-items: center;
+  }
+`;
+
+const Work = styled(User)`
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+`;
 
 export default Header;
