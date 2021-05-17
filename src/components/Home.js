@@ -47,10 +47,6 @@ const Section = styled.section`
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 0 5px;
-
-    p {
-      color: red;
-    }
   }
 `;
 
