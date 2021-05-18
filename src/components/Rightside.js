@@ -60,7 +60,7 @@ const Title = styled.div`
   color: rgba(0, 0, 0, 0.6);
 `;
 
-const FeedList = styled.div``;
+const FeedList = styled.ul``;
 const Avatar = styled.div``;
 
 export default Rightside;
