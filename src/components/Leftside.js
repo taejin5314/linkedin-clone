@@ -190,6 +190,7 @@ const CommunityCard = styled(ArtCard)`
     span {
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
   }
 `;
