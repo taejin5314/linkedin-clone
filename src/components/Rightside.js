@@ -6,7 +6,30 @@ const Rightside = (props) => {
       <FollowCard>
         <Title>
           <h2>Add to your feed</h2>
+          <img src="/images/feed-icon.svg" alt="" />
         </Title>
+
+        <FeedList>
+          <li>
+            <a>
+              <Avatar />
+            </a>
+            <div>
+              <span>#Linkedin</span>
+              <button>Follow</button>
+            </div>
+          </li>
+
+          <li>
+            <a>
+              <Avatar />
+            </a>
+            <div>
+              <span>#Video</span>
+              <button>Follow</button>
+            </div>
+          </li>
+        </FeedList>
       </FollowCard>
     </Container>
   );
@@ -36,5 +59,8 @@ const Title = styled.div`
   width: 100%;
   color: rgba(0, 0, 0, 0.6);
 `;
+
+const FeedList = styled.div``;
+const Avatar = styled.div``;
 
 export default Rightside;
