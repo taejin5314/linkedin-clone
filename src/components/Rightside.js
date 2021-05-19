@@ -93,6 +93,9 @@ const FeedList = styled.ul`
     }
   }
 `;
-const Avatar = styled.div``;
+
+const Avatar = styled.div`
+  background-image: url('https://static-exp1.licdn.com/sc/h/1b4vl1r54ijmrcmcyxms')
+`;
 
 export default Rightside;
