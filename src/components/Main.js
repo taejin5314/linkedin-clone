@@ -23,6 +23,12 @@ const CommonCard = styled.div`
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
 `;
 
-const ShareBox = styled.div``;
+const ShareBox = styled(CommonCard)`
+  display: flex;
+  flex-direction: column;
+  color: #958b7b;
+  margin: 0 0 8px 0;
+  background: white;
+`;
 
 export default Main;
