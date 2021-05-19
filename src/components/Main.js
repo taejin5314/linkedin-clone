@@ -8,4 +8,12 @@ const Container = styled.div`
   grid-area: main;
 `;
 
+const CommonCard = styled.div`
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #fff;
+  
+`;
+
 export default Main;
