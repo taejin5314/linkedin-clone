@@ -88,6 +88,21 @@ const ShareBox = styled(CommonCard)`
         padding-left: 16px;
         border: 1px solid rgba(0, 0, 0, 0.15);
         border-radius: 35px;
+        background-color: white;
+        text-align: left;
+      }
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-bottom: 4px;
+
+      button {
+        img {
+          margin: 0 4px 0 -2px;
+        }
       }
     }
   }
