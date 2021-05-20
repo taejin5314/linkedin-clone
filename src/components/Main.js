@@ -135,6 +135,34 @@ const Article = styled(CommonCard)`
   overflow: visible;
 `;
 
-const SharedActor = styled.div``;
+const SharedActor = styled.div`
+  padding-right: 40px;
+  flex-wrap: nowrap;
+  padding: 12px 16px 0;
+  margin-bottom: 8px;
+  align-items: center;
+  display: flex;
+
+  a {
+    margin-right: 12px;
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    text-decoration: none;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+    & > div {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-basis: 0;
+      margin-left: 8px;
+      overflow: hidden;
+    }
+  }
+`;
 
 export default Main;
