@@ -117,6 +117,6 @@ const ShareBox = styled(CommonCard)`
   }
 `;
 
-const Article = styled.div``;
+const Article = styled(CommonCard)``;
 
 export default Main;
