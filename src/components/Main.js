@@ -46,6 +46,13 @@ const Main = (props) => {
               <img src="/images/ellipsis.svg" alt="" />
             </button>
           </SharedActor>
+
+          <Description>Description</Description>
+          <SharedImg>
+            <a>
+              <img src="/images/3jpg.jpg" alt="" />
+            </a>
+          </SharedImg>
         </Article>
       </div>
     </Container>
@@ -188,5 +195,9 @@ const SharedActor = styled.div`
     outline: none;
   }
 `;
+
+const Description = styled.div``;
+
+const SharedImg = styled.div``;
 
 export default Main;
