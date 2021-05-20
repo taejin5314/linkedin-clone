@@ -232,7 +232,23 @@ const SharedImg = styled.div`
 `;
 
 const SocialCounts = styled.ul`
-  text-decoration: none;
+  line-height: 1.3;
+  display: flex;
+  align-items: flex-start;
+  overflow: auto;
+  margin: 0 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9e5df;
+  list-style: none;
+  
+  li {
+    margin-right: 5px;
+    font-size: 12px;
+    
+    button {
+      display: flex;
+    }
+  }
 `;
 
 export default Main;
