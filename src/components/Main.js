@@ -161,7 +161,31 @@ const SharedActor = styled.div`
       flex-basis: 0;
       margin-left: 8px;
       overflow: hidden;
+
+      span {
+        text-align: left;
+
+        &:first-child {
+          font-size: 14px;
+          font-weight: 700;
+          color: rgba(0, 0, 0, 1);
+        }
+
+        &:nth-child(n+2) {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
     }
+  }
+
+  button {
+    position: absolute;
+    right: 12px;
+    top: 0;
+    background: transparent;
+    border: none;
+    outline: none;
   }
 `;
 
