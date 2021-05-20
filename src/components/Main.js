@@ -33,7 +33,19 @@ const Main = (props) => {
       </ShareBox>
       <div>
         <Article>
-          Article
+          <SharedActor>
+            <a>
+              <img src="/images/user.svg" alt="" />
+              <div>
+                <span>Title</span>
+                <span>Info</span>
+                <span>Date</span>
+              </div>
+            </a>
+            <button>
+              <img src="/images/ellipsis.svg" alt="" />
+            </button>
+          </SharedActor>
         </Article>
       </div>
     </Container>
@@ -110,13 +122,19 @@ const ShareBox = styled(CommonCard)`
         }
 
         span {
-          color: #70b5f9;
+          color: rgba(0, 0, 0, 0.6);
         }
       }
     }
   }
 `;
 
-const Article = styled(CommonCard)``;
+const Article = styled(CommonCard)`
+  padding: 0;
+  margin: 0 0 8px;
+  overflow: visible;
+`;
+
+const SharedActor = styled.div``;
 
 export default Main;
