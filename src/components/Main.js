@@ -33,7 +33,7 @@ const Main = (props) => {
       </ShareBox>
       <div>
         <Article>
-
+          Article
         </Article>
       </div>
     </Container>
@@ -116,5 +116,7 @@ const ShareBox = styled(CommonCard)`
     }
   }
 `;
+
+const Article = styled.div``;
 
 export default Main;
