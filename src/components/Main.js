@@ -53,6 +53,16 @@ const Main = (props) => {
               <img src="/images/3jpg.jpg" alt="" />
             </a>
           </SharedImg>
+
+          <SocialCounts>
+            <li>
+              <button>
+                <img src="/images/like.svg" alt="" />
+                <img src="/images/clap.svg" alt="" />
+                <span>75</span>
+              </button>
+            </li>
+          </SocialCounts>
         </Article>
       </div>
     </Container>
@@ -217,5 +227,7 @@ const SharedImg = styled.div`
     height: 100%;
   }
 `;
+
+const SocialCounts = styled.div``;
 
 export default Main;
