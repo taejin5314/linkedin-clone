@@ -31,6 +31,11 @@ const Main = (props) => {
           </button>
         </div>
       </ShareBox>
+      <div>
+        <Article>
+
+        </Article>
+      </div>
     </Container>
   );
 }
@@ -102,6 +107,10 @@ const ShareBox = styled(CommonCard)`
       button {
         img {
           margin: 0 4px 0 -2px;
+        }
+
+        span {
+          color: #70b5f9;
         }
       }
     }
