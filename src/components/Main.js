@@ -62,6 +62,9 @@ const Main = (props) => {
                 <span>75</span>
               </button>
             </li>
+            <li>
+              <a>2 comments</a>
+            </li>
           </SocialCounts>
         </Article>
       </div>
@@ -228,6 +231,8 @@ const SharedImg = styled.div`
   }
 `;
 
-const SocialCounts = styled.div``;
+const SocialCounts = styled.ul`
+  text-decoration: none;
+`;
 
 export default Main;
