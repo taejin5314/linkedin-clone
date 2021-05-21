@@ -9,4 +9,4 @@ const userReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-// stateUpdates
+export default userReducer;
