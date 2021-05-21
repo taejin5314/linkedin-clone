@@ -285,6 +285,9 @@ const SocialActions = styled.div`
     color: rgba(0, 0, 0, 0.6);
 
     @media (min-width: 768px) {
+      img {
+        color: rgba(0, 0, 0, 0.6);
+      }
       span {
         margin-left: 8px;
       }
