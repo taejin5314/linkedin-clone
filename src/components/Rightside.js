@@ -37,7 +37,7 @@ const Rightside = (props) => {
         </Recommendation>
       </FollowCard>
       <BannerCard>
-        <img src="/images/ad.jpg" alt="" />
+        <img src="/images/jobs-ad.jpg" alt="" />
       </BannerCard>
     </Container>
   );
