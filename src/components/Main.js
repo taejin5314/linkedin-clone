@@ -282,7 +282,13 @@ const SocialActions = styled.div`
     display: inline-flex;
     align-items: center;
     padding: 8px;
-    color: #0a66c2;
+    color: rgba(0, 0, 0, 0.6);
+
+    @media (min-width: 768px) {
+      span {
+        margin-left: 8px;
+      }
+    }
   }
 `;
 
