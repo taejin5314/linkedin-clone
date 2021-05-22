@@ -110,7 +110,7 @@ const Main = (props) => {
           </SocialActions>
         </Article>
       </div>
-      <PostModal showModal={showModal} />
+      <PostModal showModal={showModal} handleClick={handleClick} />
     </Container>
   );
 }
