@@ -15,6 +15,8 @@ const Container = styled.div`
   right: 0;
   bottom: 0;
   z-index: 9999;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.8);
 `;
 
 export default PostModal;
