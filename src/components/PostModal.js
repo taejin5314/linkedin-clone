@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
 const PostModal = (props) => {
+  const [editorText, setEditorText] = useState("");
   return (
     <Container>
       <Content>
@@ -15,6 +17,9 @@ const PostModal = (props) => {
             <img src="/images/user.svg" alt="" />
             <span>Name</span>
           </UserInfo>
+
+          <textarea value={editorText} onChange={(e) => setEditorText(e.target.value)}></textarea>
+
         </SharedContent>
         <ShareCreation>
           <AttachAssets>
