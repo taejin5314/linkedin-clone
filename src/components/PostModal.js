@@ -4,7 +4,12 @@ const PostModal = (props) => {
   return (
     <Container>
       <Content>
-        Content
+        <Header>
+          <h2>Create a Post</h2>
+          <button>
+            <img src="/images/close-icon.svg" alt="" />
+          </button>
+        </Header>
       </Content>
     </Container>
   )
@@ -18,7 +23,7 @@ const Container = styled.div`
   bottom: 0;
   z-index: 9999;
   color: black;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
 `;
 
 const Content = styled.div`
@@ -34,5 +39,7 @@ const Content = styled.div`
   top: 32px;
   margin: 0 auto;
 `;
+
+const Header = styled.div``;
 
 export default PostModal;
