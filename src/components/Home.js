@@ -1,3 +1,4 @@
+import { connect } from 'react-redux';
 import styled from 'styled-components';
 import Leftside from './Leftside';
 import Main from './Main';
@@ -73,4 +74,10 @@ const Layout = styled.div`
   }
 `;
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    user: state.userState.user,
+  }
+}
+
+export default connect(mapStateToProps)(Home);
