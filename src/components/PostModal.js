@@ -44,7 +44,16 @@ const PostModal = (props) => {
                   autoFocus={true}
                 />
                 <UploadImage>
-                  <input type="file" />
+                  <input type="file" accept='image/gif, image/jpeg, image/png' name="image" id='file' style={{ display: "none" }} onChange={handleChange} />
+
+                  <p>
+                    <label
+                      htmlFor="file"
+                    >
+                      Select an image to share
+                    </label>
+                  </p>
+                  {shareImage && <img src={URL.createObjectURL(shareImage)} />}
                 </UploadImage>
               </Editor>
 
