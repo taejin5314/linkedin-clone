@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import PostModal from './PostModal';
 
 const Main = (props) => {
+  const [showModal, setShowModal] = useState("close");
   return (
     <Container>
       <ShareBox>Share
