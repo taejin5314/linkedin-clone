@@ -70,7 +70,15 @@ const Header = styled.div`
   }
 `;
 
-const SharedContent = styled.div``;
+const SharedContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: auto;
+  vertical-align: baseline;
+  background: transparent;
+  padding: 8px 12px;
+`;
 
 const UserInfo = styled.div``;
 
