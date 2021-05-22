@@ -63,7 +63,7 @@ const Header = (props) => {
                     (<img src={props.user.photoURL} alt="" />)
                     : (<img src="/images/user.svg" alt="" />)
                 }
-                <span>{props.user.displayName}
+                <span>{props.user && props.user.displayName ? props.user.displayName : 'Me'}
                   <img src="/images/down-icon.svg" alt="" />
                 </span>
               </a>
@@ -266,7 +266,9 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({});
+const mapDispatchToProps = (dispatch) => ({
+  signOut: () => dispatch(signOutAPI()),
+});
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
