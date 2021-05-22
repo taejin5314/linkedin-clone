@@ -44,7 +44,7 @@ const PostModal = (props) => {
                   autoFocus={true}
                 />
                 <UploadImage>
-
+                  <input type="file" />
                 </UploadImage>
               </Editor>
 
