@@ -80,6 +80,9 @@ const SharedContent = styled.div`
   padding: 8px 12px;
 `;
 
-const UserInfo = styled.div``;
+const UserInfo = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 export default PostModal;
