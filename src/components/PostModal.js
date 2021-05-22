@@ -186,11 +186,12 @@ const PostButton = styled.button`
   border-radius: 20px;
   padding-left: 16px;
   padding-right: 16px;
-  background: ${props => props.disabled ? 'rgba(0, 0, 0, 0.8)' : '#0a66c2'};
-  color: ${props => props.disabled ? 'rgba(1, 1, 1, 0.3)' : 'white'};
+  background: ${props => props.disabled ? 'rgba(0, 0, 0, 0.08)' : '#0a66c2'};
+  color: ${props => props.disabled ? 'rgba(1, 1, 1, 0.2)' : 'white'};
 
   &:hover {
-    background: #004182;
+    background: ${props => props.disabled ? 'rgba(0, 0, 0, 0.2)' : '#004182'};
+    cursor: not-allowed;
   }
 `;
 
