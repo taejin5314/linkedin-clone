@@ -8,7 +8,7 @@ const Leftside = (props) => {
           <CardBackground />
           <a>
             <Photo />
-            <Link>Welcome, there!</Link>
+            <Link>Welcome, {props.user ? props.user.displayName : 'guest'}!</Link>
           </a>
           <a>
             <AddPhotoText>Add a photo</AddPhotoText>
