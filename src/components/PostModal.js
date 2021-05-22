@@ -28,6 +28,11 @@ const Content = styled.div`
   max-height: 90%;
   overflow: initial;
   border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 32px;
+  margin: 0 auto;
 `;
 
 export default PostModal;
