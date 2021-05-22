@@ -3,6 +3,17 @@ import styled from 'styled-components';
 
 const PostModal = (props) => {
   const [editorText, setEditorText] = useState("");
+  const [shareImage, setShareImage] = useState("");
+
+  const handleChange = (e) => {
+    const image = e.target.files[0];
+
+    if (image === '' || image === undefined) {
+      alert(`not an image, the file is a ${typeof image}`);
+      return;
+    }
+    setShareImage(image);
+  }
 
   const reset = (e) => {
     setEditorText("");
@@ -31,7 +42,10 @@ const PostModal = (props) => {
                   onChange={(e) => setEditorText(e.target.value)}
                   placeholder="What do you want to talk about?"
                   autoFocus={true}
-                ></textarea>
+                />
+                <UploadImage>
+
+                </UploadImage>
               </Editor>
 
             </SharedContent>
@@ -211,5 +225,7 @@ const Editor = styled.div`
     margin-bottom: 20px;
   }
 `;
+
+const UploadImage = styled.div``;
 
 export default PostModal;
