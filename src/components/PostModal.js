@@ -83,6 +83,22 @@ const SharedContent = styled.div`
 const UserInfo = styled.div`
   display: flex;
   align-items: center;
+  padding: 12px 24px;
+
+  svg, img {
+    width: 48px;
+    height: 48px;
+    background-clip: content-box;
+    border: 2px solid transparent;
+    border-radius: 50%;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 5px;
+  }
 `;
 
 export default PostModal;
