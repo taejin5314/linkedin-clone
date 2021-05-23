@@ -56,6 +56,15 @@ const PostModal = (props) => {
                     </label>
                   </p>
                   {shareImage && <img src={URL.createObjectURL(shareImage)} />}
+                  <>
+                    <input
+                      type="text"
+                      placeholder="Please input a video link"
+                      value={videoLink}
+                      onChange={(e) => setVideoLink(e.target.value)}
+                    />
+                    {videoLink && <ReactPlayer width={'100%'} url={videoLink} />}
+                  </>
                 </UploadImage>
               </Editor>
 
