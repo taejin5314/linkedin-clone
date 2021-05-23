@@ -32,3 +32,17 @@ export function signOutAPI() {
     }).catch((error) => console.log(error.message));
   }
 }
+
+export function postArticleAPI(payload) {
+  return (payload) => {
+    if (payload.image !== '') {
+      const upload = storage.ref(`images/${payload.image.name}`).put(payload.image);
+      upload.on('state_changed',
+        snapshot => {
+          const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+          console.log(`Progress: ${progress}`)
+        }
+      )
+    }
+  }
+}
