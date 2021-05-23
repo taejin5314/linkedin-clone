@@ -46,7 +46,10 @@ const PostModal = (props) => {
             </Header>
             <SharedContent>
               <UserInfo>
-                <img src="/images/user.svg" alt="" />
+                {props.user.photoURL ? <img src={props.user.photoURL} />
+                  :
+                  <img src="/images/user.svg" alt="" />
+                }
                 <span>Name</span>
               </UserInfo>
 
@@ -270,6 +273,12 @@ const UploadImage = styled.div`
   }
 `;
 
-const mapStateToProps = (state) => ({});
+const mapStateToProps = (state) => {
+  return {
+    user: state.userState.user,
+  }
+}
 
-export default connect(mapStateToProps)(PostModal);
+const mapDispatchToProps = (dispatch) => ({});
+
+export default connect(mapStateToProps, mapDispatchToProps)(PostModal);
