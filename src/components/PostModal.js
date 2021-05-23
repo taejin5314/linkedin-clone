@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import ReactPlayer from 'react-player';
+import { connect } from 'react-redux';
 
 const PostModal = (props) => {
   const [editorText, setEditorText] = useState("");
@@ -269,4 +270,6 @@ const UploadImage = styled.div`
   }
 `;
 
-export default PostModal;
+const mapStateToProps = (state) => ({});
+
+export default connect(mapStateToProps)(PostModal);
