@@ -50,7 +50,10 @@ const PostModal = (props) => {
                   :
                   <img src="/images/user.svg" alt="" />
                 }
-                <span>Name</span>
+                {props.user.displayName ? <span>{props.user.displayName}</span>
+                  :
+                  <span>Name</span>
+                }
               </UserInfo>
 
               <Editor>
