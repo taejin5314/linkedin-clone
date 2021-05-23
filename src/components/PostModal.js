@@ -56,17 +56,21 @@ const PostModal = (props) => {
                   placeholder="What do you want to talk about?"
                   autoFocus={true}
                 />
-                <UploadImage>
-                  <input type="file" accept='image/gif, image/jpeg, image/png' name="image" id='file' style={{ display: "none" }} onChange={handleChange} />
+                {assetArea === 'image' ?
+                  <UploadImage>
+                    <input type="file" accept='image/gif, image/jpeg, image/png' name="image" id='file' style={{ display: "none" }} onChange={handleChange} />
 
-                  <p>
-                    <label
-                      htmlFor="file"
-                    >
-                      Select an image to share
+                    <p>
+                      <label
+                        htmlFor="file"
+                      >
+                        Select an image to share
                     </label>
-                  </p>
-                  {shareImage && <img src={URL.createObjectURL(shareImage)} />}
+                    </p>
+                    {shareImage && <img src={URL.createObjectURL(shareImage)} />}
+                  </UploadImage>
+                  :
+                  assetArea === 'media' &&
                   <>
                     <input
                       type="text"
@@ -76,7 +80,7 @@ const PostModal = (props) => {
                     />
                     {videoLink && <ReactPlayer width={'100%'} url={videoLink} controls={true} />}
                   </>
-                </UploadImage>
+                }
               </Editor>
 
             </SharedContent>
