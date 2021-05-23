@@ -240,7 +240,6 @@ const UploadImage = styled.div`
   
   img {
     width: 100%;
-    
   }
 `;
 
