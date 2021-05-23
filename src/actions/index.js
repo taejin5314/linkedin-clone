@@ -1,5 +1,6 @@
 import { auth, provider, storage } from '../firebase';
 import { SET_USER } from './actionType';
+import db from '../firebase';
 
 export const setUser = (payload) => ({
   type: SET_USER,
