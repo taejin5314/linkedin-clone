@@ -86,10 +86,10 @@ const PostModal = (props) => {
             </SharedContent>
             <ShareCreation>
               <AttachAssets>
-                <AssetButton>
+                <AssetButton onClick={() => switchAssetArea('image')}>
                   <img src="/images/share-image.svg" alt="" />
                 </AssetButton>
-                <AssetButton>
+                <AssetButton onClick={() => switchAssetArea('media')}>
                   <img src="/images/share-video.svg" alt="" />
                 </AssetButton>
               </AttachAssets>
