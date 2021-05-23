@@ -6,6 +6,7 @@ const PostModal = (props) => {
   const [editorText, setEditorText] = useState("");
   const [shareImage, setShareImage] = useState("");
   const [videoLink, setVideoLink] = useState("");
+  const [assetArea, setAssetArea] = useState("");
 
   const handleChange = (e) => {
     const image = e.target.files[0];
@@ -17,10 +18,20 @@ const PostModal = (props) => {
     setShareImage(image);
   }
 
+  const switchAssetArea = (area) => {
+    setShareImage('');
+    setVideoLink('');
+    setAssetArea(area);
+  }
+
   const reset = (e) => {
-    setEditorText("");
+    setEditorText('');
+    setShareImage('');
+    setVideoLink('');
+    setAssetArea('');
     props.handleClick(e);
   }
+
   return (
     <>
       { props.showModal === 'open' &&
