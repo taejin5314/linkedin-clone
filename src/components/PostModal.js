@@ -63,7 +63,7 @@ const PostModal = (props) => {
                       value={videoLink}
                       onChange={(e) => setVideoLink(e.target.value)}
                     />
-                    {videoLink && <ReactPlayer width={'100%'} url={videoLink} />}
+                    {videoLink && <ReactPlayer width={'100%'} url={videoLink} controls={true} />}
                   </>
                 </UploadImage>
               </Editor>
