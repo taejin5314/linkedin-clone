@@ -27,6 +27,24 @@ const PostModal = (props) => {
     setAssetArea(area);
   }
 
+  const postArticle = (e) => {
+    e.preventDefault();
+    if (e.target !== e.currentTarget) {
+      return;
+    }
+
+    const payload = {
+      image: shareImage,
+      video: videoLink,
+      user: props.user,
+      discription: editorText,
+      timestamp: firebase.firestore.Timestamp.now(),
+    };
+
+    props.postArticleAPI(payload);
+    reset(e);
+  }
+
   const reset = (e) => {
     setEditorText('');
     setShareImage('');
@@ -110,7 +128,7 @@ const PostModal = (props) => {
                 </AssetButton>
               </ShareComment>
 
-              <PostButton disabled={!editorText ? true : false}>
+              <PostButton disabled={!editorText ? true : false} onClick={(event) => postArticle(event)}>
                 Post
               </PostButton>
 
