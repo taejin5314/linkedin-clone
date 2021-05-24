@@ -32,7 +32,6 @@ const PostModal = (props) => {
     if (e.target !== e.currentTarget) {
       return;
     }
-
     const payload = {
       image: shareImage,
       video: videoLink,
@@ -41,7 +40,7 @@ const PostModal = (props) => {
       timestamp: firebase.firestore.Timestamp.now(),
     };
 
-    props.postArticleAPI(payload);
+    props.postArticle(payload);
     reset(e);
   }
 
@@ -302,6 +301,8 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({});
+const mapDispatchToProps = (dispatch) => ({
+  postArticle: (payload) => dispatch(postArticleAPI(payload)),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(PostModal);

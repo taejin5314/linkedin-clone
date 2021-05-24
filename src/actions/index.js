@@ -37,7 +37,7 @@ export function signOutAPI() {
 export function postArticleAPI(payload) {
   return (payload) => {
     if (payload.image !== '') {
-      const upload = storage.ref(`images/${payload.image.name}`).put(payload.image);
+      const upload = storage.ref(`images/${payload.image}`).put(payload.image);
       upload.on('state_changed',
         snapshot => {
           const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
