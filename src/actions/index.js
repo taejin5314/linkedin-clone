@@ -36,7 +36,7 @@ export function signOutAPI() {
 
 export function postArticleAPI(payload) {
   return (dispatch) => {
-    if (payload.image != '') {
+    if (payload.image !== '') {
       const upload = storage.ref(`images/${payload.image}`).put(payload.image);
       upload.on('state_changed',
         snapshot => {

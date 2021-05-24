@@ -36,7 +36,7 @@ const PostModal = (props) => {
       image: shareImage,
       video: videoLink,
       user: props.user,
-      discription: editorText,
+      description: editorText,
       timestamp: firebase.firestore.Timestamp.now(),
     };
 
