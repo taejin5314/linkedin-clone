@@ -67,7 +67,8 @@ export function postArticleAPI(payload) {
             sharedImg: downloadURL,
             comments: 0,
             description: payload.description,
-          })
+          });
+          dispatch(setLoading(false));
         }
       )
     } else if (payload.video) {
@@ -82,7 +83,8 @@ export function postArticleAPI(payload) {
         sharedImg: "",
         comments: 0,
         description: payload.description,
-      })
+      });
+      dispatch(setLoading(false));
     }
   }
 }
