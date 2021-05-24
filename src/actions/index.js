@@ -1,10 +1,15 @@
 import { auth, provider, storage } from '../firebase';
-import { SET_USER } from './actionType';
+import { SET_USER, SET_LOADING_STATUS } from './actionType';
 import db from '../firebase';
 
 export const setUser = (payload) => ({
   type: SET_USER,
   user: payload,
+});
+
+export const setLoading = (status) => ({
+  type: SET_LOADING_STATUS,
+  status: status,
 })
 
 export function signInAPI() {
@@ -36,6 +41,8 @@ export function signOutAPI() {
 
 export function postArticleAPI(payload) {
   return (dispatch) => {
+    dispatch(setLoading(true));
+
     if (payload.image !== '') {
       const upload = storage.ref(`images/${payload.image}`).put(payload.image);
       upload.on('state_changed',
