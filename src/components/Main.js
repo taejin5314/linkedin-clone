@@ -63,7 +63,7 @@ const Main = (props) => {
         </div>
       </ShareBox>
       <Content>
-        {props.loading && <img src='/images/spin-loader.svg' />}
+        {props.loading && <img src='/images/spin-loader.svg' alt="" />}
 
         <Article>
           <SharedActor>
@@ -333,7 +333,7 @@ const Content = styled.div`
   text-align: center;
 
   & > img {
-    width: 30px;
+    width: 50px;
   }
 `;
 
