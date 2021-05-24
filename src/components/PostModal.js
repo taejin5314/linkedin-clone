@@ -266,6 +266,9 @@ const PostButton = styled.button`
 
   &:hover {
     background: ${props => props.disabled ? 'rgba(0, 0, 0, 0.2)' : '#004182'};
+  }
+
+  &:disabled:hover {
     cursor: not-allowed;
   }
 `;
