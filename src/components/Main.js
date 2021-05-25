@@ -36,7 +36,46 @@ const Main = (props) => {
       {
         props.articles.length === 0
           ?
-          <p>There are no articles</p>
+          (
+            <Container>
+              <ShareBox>
+                <div>
+                  {props.user && props.user.photoURL ?
+                    <img src={props.user.photoURL} />
+                    :
+                    <img src="/images/user.svg" alt="" />
+                  }
+                  <button
+                    onClick={handleClick}
+                    disabled={props.loading ? true : false}
+                  >Start a post</button>
+                </div>
+
+                <div>
+                  <button>
+                    <img src="/images/photo-icon.svg" alt="" />
+                    <span>Photo</span>
+                  </button>
+
+                  <button>
+                    <img src="/images/video-icon.svg" alt="" />
+                    <span>Video</span>
+                  </button>
+
+                  <button>
+                    <img src="/images/event-icon.svg" alt="" />
+                    <span>Event</span>
+                  </button>
+
+                  <button>
+                    <img src="/images/article-icon.svg" alt="" />
+                    <span>Write article</span>
+                  </button>
+                </div>
+              </ShareBox>
+              <p>There are no articles</p>
+            </Container>
+          )
           :
           (
             <Container>
@@ -99,9 +138,13 @@ const Main = (props) => {
                       <a>
                         {
                           !article.sharedImg && article.video ?
-                            <ReactPlayer width={'100%'} controls={true} url={article.video} />
+                            (
+                              <ReactPlayer width={'100%'} controls={true} url={article.video} />
+                            )
                             :
-                            <img src={article.sharedImg} alt="" />
+                            (
+                              article.sharedImg && <img src={article.sharedImg} alt="" />
+                            )
                         }
                       </a>
                     </SharedImg>
