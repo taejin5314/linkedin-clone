@@ -74,6 +74,7 @@ const Main = (props) => {
                 </div>
               </ShareBox>
               <p>There are no articles</p>
+              <PostModal showModal={showModal} handleClick={handleClick} />
             </Container>
           )
           :
@@ -158,7 +159,7 @@ const Main = (props) => {
                         </button>
                       </li>
                       <li>
-                        <a>2 comments</a>
+                        <a>{article.comments}</a>
                       </li>
                     </SocialCounts>
 
