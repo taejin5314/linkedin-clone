@@ -367,6 +367,8 @@ const SocialCounts = styled.ul`
     
     button {
       display: flex;
+      border: none;
+      background-color: white;
     }
   }
 `;
@@ -384,6 +386,8 @@ const SocialActions = styled.div`
     align-items: center;
     padding: 8px;
     color: rgba(0, 0, 0, 0.6);
+    border: none;
+    background-color: white;
 
     @media (min-width: 768px) {
       img {
